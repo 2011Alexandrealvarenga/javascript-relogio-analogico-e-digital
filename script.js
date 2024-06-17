@@ -1,27 +1,27 @@
-// let digitalElement = document.querySelector('.digital');
-// let sElement = document.querySelector('.p_s');
-// let mElement = document.querySelector('.p_m');
-// let hElement = document.querySelector('.p_h');
+let digitalElement = document.querySelector('.digital');
+let sElement = document.querySelector('.p_s');
+let mElement = document.querySelector('.p_m');
+let hElement = document.querySelector('.p_h');
 
-// function updateClock(){
+function updateClock(){
 
-//   let now = new Date();
-//   let hour = now.getHours();
-//   let minute = now.getMinutes();
-//   let second = now.getSeconds();
+  let now = new Date();
+  let hour = now.getHours();
+  let minute = now.getMinutes();
+  let second = now.getSeconds();
 
-//   // pega hora min e segundos
-//   digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
+  // pega hora min e segundos
+  digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
 
-// }
+}
 
-// // acrescenta 0 nos segundos
-// function fixZero(time){
-//   if(time < 10){
-//     return '0'+time;
-//   }else{
-//     return time;
-//   }
+// acrescenta 0 nos segundos
+function fixZero(time){
+  if(time < 10){
+    return '0'+time;
+  }else{
+    return time;
+  }
 
-// }
-// setInterval(updateClock, 1000);
+}
+setInterval(updateClock, 1000);
